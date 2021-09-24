@@ -11,47 +11,33 @@
         <p>Age of user: <?=(int)$_POST['age']?> </p>
         <p>The amount of hours they play games a week: <?=htmlspecialchars($_POST['hours'])?> </p>
         <?php if(isset($_POST['rpg']))
-        {
             echo "They play RPG games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['openworld']))
-        {
             echo "They play open world games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['fps']))
-        {
             echo "They play FPS games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['sports']))
-        {
             echo "They play sport games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['mmo']))
-        {
             echo "They play mmo games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['puzzle']))
-        {
             echo "They play puzzle games";
-            <br>
-        }
         ?>
+        <br>
         <?php if(isset($_POST['racing']))
-        {
             echo "They play racing games";
-            <br>
-        }
         ?>
+        <br>
 
         <p>Their favourite console is: <?=htmlspecialchars($_POST['console'])?></p>
 
