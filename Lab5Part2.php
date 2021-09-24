@@ -53,7 +53,7 @@
         ?>
         <br>
         <?php if(isset($_POST['other']))
-            echo "Other games they play (if any):" <?=$_POST['other'];?>
+            echo "Other games they play (if any):" <$_POST['other'];?>
         ?>
         <br>
 
