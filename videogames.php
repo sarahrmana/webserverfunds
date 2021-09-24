@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>lab2.html</title>
+    <title>Video Games</title>
 </head>
     <body>
         <p><?= var_dump($_GET) ?></p>
@@ -9,7 +9,7 @@
 
         <h1>Form on video games</h1>
         <form>
-            <form action="videogames.php" method="GET">
+            <form action="videogames.php" method="post">
 
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" required/><br>
