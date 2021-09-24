@@ -15,11 +15,47 @@
         else   
             echo "They do not play RPG games";
         ?>
+        <br>
         <?php if(isset($_POST['openworld']))
             echo "They play open world games";
         else   
             echo "They do not play open world games";
         ?>
+        <br>
+        <?php if(isset($_POST['fps']))
+            echo "They play FPS games";
+        else   
+            echo "They do not play FPS games";
+        ?>
+        <br>
+        <?php if(isset($_POST['sports']))
+            echo "They play sport games";
+        else   
+            echo "They do not play sport games";
+        ?>
+        <br>
+        <?php if(isset($_POST['mmo']))
+            echo "They play mmo games";
+        else   
+            echo "They do not play mmo games";
+        ?>
+        <br>
+        <?php if(isset($_POST['puzzle']))
+            echo "They play puzzle games";
+        else   
+            echo "They do not play puzzle games";
+        ?>
+        <br>
+        <?php if(isset($_POST['racing']))
+            echo "They play racing games";
+        else   
+            echo "They do not play racing games";
+        ?>
+        <br>
+        <?php if(isset($_POST['other']))
+            echo "Other games they play (if any):" <?=$_POST['other'];?>
+        ?>
+        <br>
 
     </body>
 </html>
