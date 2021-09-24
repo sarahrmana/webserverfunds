@@ -12,8 +12,8 @@
         <p>The amount of hours they play games a week: <?=htmlspecialchars($_POST['hours'])?> </p>
         <?php if(isset($_POST['rpg']))
             echo "They play RPG games";
-        else   
-            echo "They do not play RPG games";
+        //else   
+           // echo "They do not play RPG games"; 
         ?>
         <br>
         <?php if(isset($_POST['openworld']))
