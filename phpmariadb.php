@@ -11,12 +11,14 @@
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    echo "Connected successfully";?>
+    echo "Connected successfully";
 
     $sql = "select * from fave_games;";
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {
         echo "id: " . $row["id"]. " | Name: " . $row["game"]. " " .$row["genre"] . "\n";}
+        ?>
 </body>
+</html>
 
