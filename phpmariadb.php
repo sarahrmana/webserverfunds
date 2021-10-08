@@ -17,8 +17,9 @@
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {
-        echo "id: " . $row["id"]. " | Name: " . $row["game"]. " " .$row["genre"] . "\n";}
-        ?>
+        echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]}</br>";
+    }
+    ?>
 </body>
 </html>
 
