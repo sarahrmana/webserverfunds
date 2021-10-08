@@ -12,12 +12,12 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     echo "Connected successfully";
-
+    echo "<br/>";
     $sql = "select * from fave_games;";
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {
-        echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]}</br>";
+        echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]} | Price: {$row["price"]} </br>";
     }
     ?>
 </body>
