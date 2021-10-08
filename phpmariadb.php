@@ -16,9 +16,9 @@
     $sql = "select * from fave_games;";
     $result = mysqli_query($conn, $sql);
 
-    // foreach ($result as $row) {
-    //     echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]} | Price: {$row["price"]} </br>";
-    // }
+    foreach ($result as $row) {
+        echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]} | Price: \${$row["price"]} </br>";
+    }
     ?>
     <form>
         <select name="games">
