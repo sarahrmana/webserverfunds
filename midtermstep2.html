@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Midterm Step 2</title>
+</head>
+    <body>
+        <h1>Form on items</h1>
+        <form action="submitmidterm.php" method="POST">
+            <h1>Please select the desired item</h1>
+                <input type="radio" id="masks" name="item" value="masks" required>
+                <label for="masks">Masks</label><br>
+                <input type="radio" id="visors" name="item" value="visors">
+                <label for="visors">Visors</label><br>
+                <input type="radio" id="gowns" name="item" value="gowns">
+                <label for="gowns">Gowns</label><br>
+            <h1>Please select the desired quantity</h1>
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="quantity" pattern="[0-9]" title="Numbers only" required/><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
