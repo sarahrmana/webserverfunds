@@ -33,6 +33,7 @@
         You added <?=htmlspecialchars($_POST['newgame'])?> with a genre of <?=htmlspecialchars($_POST['newgenre'])?> and a price of <?=(int)$_POST['price']?>
         
           <?php
+            insert into fave_games (game,genre,price) values ($newgame, $newgenre, $newprice);
              mysqli_close($conn); 
           ?>
     </body>
