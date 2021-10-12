@@ -15,7 +15,7 @@
             }
             echo "Connected successfully";
             echo "<br/>";
-              $sql = "select game, genre from fave_games where game='{$game}';";
+              $sql = "select game, genre, price from fave_games where game='{$game}';";
               $result = mysqli_query($conn, $sql); 
         ?>
     </head>
@@ -25,7 +25,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{$row['game']} is a {$row['genre']} game.";
+                echo "{$row['game']} is a {$row['genre']} game that costs ${$row['price']}.";
             }
             mysqli_close($conn);
         ?>
