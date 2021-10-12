@@ -30,7 +30,7 @@
         ?>
 
         <h1>New game information</h1>
-        You added <?=htmlspecialchars($_POST['newgame'])?> with a genre of <?=htmlspecialchars($_POST['newgenre'])?> and a price of <?=(int)$_POST['price']?>
+        You added <?=htmlspecialchars($_POST['newgame'])?> with a genre of <?=htmlspecialchars($_POST['newgenre'])?> and a price of <?=(int)$_POST['newprice']?>
         
           <?php
         $sql = "INSERT INTO fave_games (game, genre, price) VALUES ('{$newgame}', '{$newgenre}', {$newprice});";
