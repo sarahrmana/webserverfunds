@@ -3,7 +3,7 @@
     <head>
         <title> Form Submissions </title>
         <?php
-            $game = htmlspcialchars($_POST["game"]);
+            $game = htmlspecialchars($_POST["game"]);
             $server = "localhost";
             $username = "pi";
             $password = "voidnul1";
