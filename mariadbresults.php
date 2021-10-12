@@ -25,7 +25,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{$row['game']} is a {$row['genre']} game that costs ${$row['price']}.";
+                echo "{$row['game']} is a {$row['genre']} game that costs \${$row['price']}.";
             }
             mysqli_close($conn);
         ?>
