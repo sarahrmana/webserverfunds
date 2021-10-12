@@ -27,7 +27,13 @@
             {
                 echo "{$row['game']} is a {$row['genre']} game that costs \${$row['price']}.";
             }
-            mysqli_close($conn);
         ?>
+
+        <h1>New game information</h1>
+        You added <?=htmlspecialchars($_POST['newgame'])?> with a genre of <?=htmlspecialchars($_POST['newgenre'])?> and a price of <?=(int)$_POST['price']?>
+        
+          <?php
+             mysqli_close($conn); 
+          ?>
     </body>
 </html>

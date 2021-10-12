@@ -28,6 +28,29 @@
                 mysqli_close($conn); 
             ?>
         </select>
+
+            <h1>Section to add a new game entry (Optional)</h1>
+                <label for="newgame">Game name:</label>
+                <input type="text" id="newgame" name="newgame"/><br>
+
+            <input type="radio" id="rpg" name="newgenre" value="rpg">
+            <label for="rpg">RPG</label><br>
+            <input type="radio" id="openworld" name="newgenre" value="openworld">
+            <label for="openworld">Open World</label><br>
+            <input type="radio" id="fps" name="newgenre" value="fps">
+            <label for="fps">FPS</label><br>
+            <input type="radio" id="sports" name="newgenre" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="radio" id="mmo" name="newgenre" value="mmo">
+            <label for="mmo">MMO</label><br>
+            <input type="radio" id="puzzle" name="newgenre" value="puzzle">
+            <label for="puzzle">Puzzle</label><br>
+            <input type="radio" id="racing" name="newgenre" value="racing">
+            <label for="racing">Racing</label><br>
+
+            <label for="newprice">Price (in $): </label>
+            <input type="text" id="newprice" name="newprice" pattern="[0-9]+" title="Numbers only"/><br>
+
             <input type="submit" value="submit"/>
     </form>
 </body>
