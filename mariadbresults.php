@@ -21,7 +21,13 @@
     </head>
     <body>
         <h1>Form Submissions</h1>
-        <p>Selected game: <?=htmlspecialchars($_POST['game'])?></p>
-        <p>Genre of game: <?=htmlspecialchars($_POST['genre'])?></p>
+        You selected <?=$game?><br/>
+        <?php
+            foreach($result as $row)
+            {
+                echo "{$row['game']} is a {$row['genre']} game.";
+            }
+            mysqli_close($conn);
+        ?>
     </body>
 </html>
