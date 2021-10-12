@@ -13,7 +13,7 @@
     }
     echo "Connected successfully";
     echo "<br/>";
-  //  $sql = "select * from fave_games;";
+    $sql = "select * from fave_games;";
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {
@@ -25,6 +25,7 @@
         <select name="game">
             <?php
                 foreach ($result as $row) echo "<option value='{$row["game"]}'>{$row["game"]}</option>";
+                mysqli_close($conn); 
             ?>
         </select>
             <input type="submit" value="submit"/>

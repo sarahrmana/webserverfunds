@@ -2,6 +2,20 @@
 <html>
     <head>
         <title> Form Submissions </title>
+        <?php
+            $game = htmlspcialchars($_POST["games"]);
+            $server = "localhost";
+            $username = "pi";
+            $password = "voidnul1";
+            $database = "videogames";
+            $conn = mysqli_connect($server, $username, $password, $database);
+
+            if (!$conn) { 
+                die("Connection failed: {mysqli_connect_error()}"); 
+              } 
+              $sql = "select game, genre from fave_games where game='{$game}';";
+              $result = mysqli_query($conn, $sql); 
+        ?>
     </head>
     <body>
         <h1>Form Submissions</h1>
