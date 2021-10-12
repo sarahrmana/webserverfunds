@@ -20,12 +20,14 @@
         echo "id: {$row['id']} | Name: {$row['game']} | Genre: {$row["genre"]} | Price: \${$row["price"]} </br>";
     }
     ?>
-    <form>
+    <form action="mariadbresults.php" method=POST>
+        <h1>Please select a game to obtain information on it</h1>
         <select name="games">
             <?php
                 foreach ($result as $row) echo "<option value='{$row["game"]}'>{$row["game"]}</option>";
             ?>
         </select>
+            <input type="submit" value="submit"/>
     </form>
 </body>
 </html>
