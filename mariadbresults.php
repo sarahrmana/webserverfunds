@@ -4,6 +4,9 @@
         <title> Form Submissions </title>
         <?php
             $game = htmlspecialchars($_POST["game"]);
+            $newgame = htmlspecialchars($_POST["newgame"]);
+            $newgenre = htmlspecialchars($_POST["newgenre"]);
+            $newprice = (int)$_POST['newprice']
             $server = "localhost";
             $username = "pi";
             $password = "voidnul1";
