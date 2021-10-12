@@ -15,7 +15,6 @@
             }
             echo "Connected successfully";
             echo "<br/>";
-              } 
               $sql = "select game, genre from fave_games where game='{$game}';";
               $result = mysqli_query($conn, $sql); 
         ?>
