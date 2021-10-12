@@ -22,7 +22,7 @@
     ?>
     <form action="mariadbresults.php" method=POST>
         <h1>Please select a game to obtain information on it</h1>
-        <select name="games">
+        <select name="game">
             <?php
                 foreach ($result as $row) echo "<option value='{$row["game"]}'>{$row["game"]}</option>";
             ?>
