@@ -38,7 +38,8 @@
           <?php
         $sql = "INSERT INTO fave_games (game, genre, price) VALUES ('{$newgame}', '{$newgenre}', {$newprice});";
             $result = mysqli_query($conn,$sql);
-            \n echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
+            
+            echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
             mysqli_close($conn); 
           ?>
     </body>
