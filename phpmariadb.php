@@ -33,7 +33,7 @@
                 <label for="newgame">Game name:</label>
                 <input type="text" id="newgame" name="newgame"/><br>
             <br>
-            <p>Please select the genre of the game</p><br>
+            <p>Please select the genre of the game below:</p>
             <input type="radio" id="rpg" name="newgenre" value="rpg">
             <label for="rpg">RPG</label><br>
             <input type="radio" id="openworld" name="newgenre" value="openworld">
