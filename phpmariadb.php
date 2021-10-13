@@ -29,10 +29,11 @@
             ?>
         </select>
 
-            <h1>Section to add a new game entry (Optional)</h1>
+            <h1>Section to add a new game entry</h1>
                 <label for="newgame">Game name:</label>
                 <input type="text" id="newgame" name="newgame"/><br>
-
+            <br>
+            <p>Please select the genre of the game</p><br>
             <input type="radio" id="rpg" name="newgenre" value="rpg">
             <label for="rpg">RPG</label><br>
             <input type="radio" id="openworld" name="newgenre" value="openworld">
@@ -48,6 +49,7 @@
             <input type="radio" id="racing" name="newgenre" value="racing">
             <label for="racing">Racing</label><br>
 
+            <br>
             <label for="newprice">Price (in $): </label>
             <input type="text" id="newprice" name="newprice" pattern="[0-9]+" title="Numbers only"/><br>
 
