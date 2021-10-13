@@ -12,7 +12,7 @@
             $password = "voidnul1";
             $database = "videogames";
             $conn = mysqli_connect($server, $username, $password, $database);
-//just testinh
+
             if (!$conn) {
                 die("Connection failed: " . mysqli_connect_error());
             }
@@ -38,7 +38,7 @@
           <?php
         $sql = "INSERT INTO fave_games (game, genre, price) VALUES ('{$newgame}', '{$newgenre}', {$newprice});";
             $result = mysqli_query($conn,$sql);
-            <br>echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
+            echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
             mysqli_close($conn); 
           ?>
     </body>
