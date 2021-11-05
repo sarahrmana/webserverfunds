@@ -9,5 +9,12 @@
             alert("This is an alert");
             }
         </script>
+        <p id="para">Text to be changed</p>
+        <button type = "button" onclick="changetext()">Press me to change some text!</button>
+        <script>
+            function changetext(){
+                document.getElementById("para").innerHTML = "Text has been changed.";
+            }
+        </script>
     </body>
 </html>
