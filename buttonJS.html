@@ -16,5 +16,12 @@
                 document.getElementById("para").innerHTML = "Text has been changed.";
             }
         </script>
+        <p id="hide">Text to be hidden</p>
+        <button type = "button" onclick="hidetext()">Press me to hide some text!</button>
+        <script>
+            function hidetext(){
+                document.getElementById("hide").style.display = "none";
+            }
+        </script>
     </body>
 </html>
