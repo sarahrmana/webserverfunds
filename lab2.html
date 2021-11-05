@@ -8,9 +8,15 @@
         <form action="Lab5Part2.php" method="POST">
 
             <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" required/><br>
+            <input type="text" id="fname" name="fname" onblur="blurfunction()"/><br>
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" onblur=required/><br>
+            <input type="text" id="lname" name="lname" required/><br>
+
+            <script>
+                function blurfunction(){
+                    required;
+                }
+            </script>
         <h1>
             Please enter your age
         </h1>
