@@ -14,8 +14,8 @@
 
             <script>
                 function blurfunction(){
-                    if(fname = '')
-                        document.getElementById("fname").required = true;
+                    if(!fname.value.includes(''))
+                        error.innerHTML = 'Please enter a name'
                 }
             </script>
         <h1>
