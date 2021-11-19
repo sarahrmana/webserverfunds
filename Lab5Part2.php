@@ -55,21 +55,21 @@
 
         <p>Their favourite console is: <?=htmlspecialchars($_POST['console'])?></p>
         <h1>Control the LED with GPIO</h1>
-            <form method = "GEt" action= "Lab5Part2.php">
+            <form method = "GET" action= "Lab5Part2.php">
                 <input type="submit" value="OFF" name="off">
                 <input type="submit" value="ON" name="on">
             </form>
         <?php
-            shell_exec("gpio -g mode 28 out");
+            `gpio -g mode 28 out`;
             if(isset($_GET['off']))
             {
                 echo "LED is off";
-                shell_exec("gpio -g write 28 0");
+                `gpio -g write 28 0`;
             }
                 elseif(isset($_GET['on']))
             {
                 echo "LED is on";
-                shell_exec("gpio -g write 28 1");
+                (`gpio -g write 28 1`);
             }
         ?>
     </body>
