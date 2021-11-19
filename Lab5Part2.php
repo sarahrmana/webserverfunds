@@ -54,11 +54,9 @@
         <br>
 
         <p>Their favourite console is: <?=htmlspecialchars($_POST['console'])?></p>
+        
         <h1>Control the LED with GPIO</h1>
-            <form method = "GET" action= "Lab5Part2.php">
-                <input type="submit" value="OFF" name="off">
-                <input type="submit" value="ON" name="on">
-            </form>
+
         <?php
             `gpio -g mode 28 out`;
             if(isset($_GET['off']))
