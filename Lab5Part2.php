@@ -60,16 +60,16 @@
                 <input type="submit" value="ON" name="on">
             </form>
         <?php
-            shell_exec("/usr/local/bin/gpio -g mode 28 out");
+            shell_exec("gpio -g mode 28 out");
             if(isset($_GET['off']))
             {
                 echo "LED is off";
-                shell_exec("usr/local/bin/gpio -g write 28 0");
+                shell_exec("gpio -g write 28 0");
             }
                 elseif(isset($_GET['on']))
             {
                 echo "LED is on";
-                shell_exec("usr/local/bin/gpio -g write 28 1");
+                shell_exec("gpio -g write 28 1");
             }
         ?>
     </body>
