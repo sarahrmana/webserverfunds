@@ -21,17 +21,17 @@
                     echo $raw;
                     $deserialized = json_decode($raw); 
                     var_dump($deserialized); 
-                    br;
-                    br;
+                    echo "<br>";
+                    echo "<br>";
                     echo "The temperature is: ";
                     echo $deserialized->temperature;
-                    br;
+                    echo "<br>";
                     echo "The pressure is: ";
                     echo $deserialized->pressure;
-                    br;
+                    echo "<br>";
                     echo "The altitude is: ";
                     echo $deserialized->altitude;
-                    br;
+                    echo "<br>";
                     echo "The timestamp is: ";
                     echo $deserialized->timestamp;
 
