@@ -21,7 +21,8 @@
                     echo $raw;
                     $deserialized = json_decode($raw); 
                     var_dump($deserialized); 
-                    echo "The temperature is:" $deserialized->temperature;
+                    echo "The temperature is:";
+                    echo $deserialized->temperature;
                 }
         ?>
 
