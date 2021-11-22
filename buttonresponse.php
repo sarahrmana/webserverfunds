@@ -1,6 +1,6 @@
 <html>
 <head>
-    <h1>Control the LED with GPIO</h1>
+    <h1>Control the LED with GPIO/Obtain measurements</h1>
 </head>
 <body>
         <?php
@@ -19,6 +19,9 @@
                 {
                     $raw = `./bme280`; 
                     echo $raw;
+                    $deserialized = json_decode($raw); 
+                    var_dump($deserialized); 
+                    echo "The temperature is:" $deserialized->temperature;
                 }
         ?>
 
