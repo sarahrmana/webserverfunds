@@ -15,7 +15,13 @@
                 echo "LED is on";
                 (`gpio write 28 1`);
             }
+                elseif(isset($_GET['msr']))
+                {
+                    $raw = `./bme280`; 
+                    echo $raw;
+                }
         ?>
+
 </body>
 </html>
     
