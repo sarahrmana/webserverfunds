@@ -18,7 +18,7 @@
            echo "<br/>";
             echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
             mysqli_close($conn); 
-            header('Location: https://google.ca');
+         //   header('Location: https://google.ca');
           ?>
     </head>
 </html>
