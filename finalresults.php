@@ -4,7 +4,7 @@
         <title> Form Submissions </title>
         <?php
             $search = htmlspecialchars($_POST["search"]);
-            $ip_address = htmlspecialchars(["$_SERVER['REMOTE_ADDR']"]);
+            $ip_address = superglobal $_SERVER['REMOTE_ADDR']
             $server = "localhost";
             $username = "pi";
             $password = "voidnul1";
