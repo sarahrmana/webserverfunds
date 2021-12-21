@@ -4,7 +4,8 @@
         <title> Form Submissions </title>
         <?php
             $search = htmlspecialchars($_POST["search"]);
-         //   $ip_address = $_SERVER['REMOTE_ADDR']
+            $ip_address = $_SERVER['REMOTE_ADDR']
+            echo $ip_address
             $server = "localhost";
             $username = "pi";
             $password = "voidnul1";
@@ -13,7 +14,7 @@
 
         ?>
         <?php
-      //  $sql = "INSERT INTO searches (search, ip_address) VALUES ('{$search}', '{$ip_address});";
+       // $sql = "INSERT INTO searches (search, ip_address) VALUES ('{$search}', '{$ip_address});";
             $result = mysqli_query($conn,$sql);
            echo "<br/>";
             echo $result ? "Success!" : "Failure: " . mysqli_error($conn);
