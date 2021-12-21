@@ -22,12 +22,6 @@
                 <label for="search">Search:</label>
                 <input type="text" id="search" name="search"/><br>
             <br>
-            <select name="search">
-            <?php
-                foreach ($result as $row) echo "<option value='{$row["search"]}'>{$row["search"]}</option>";
-                mysqli_close($conn); 
-            ?>
-        </select>
             <input type="submit" value="submit"/>
         </form>
 </body>
