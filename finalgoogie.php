@@ -15,7 +15,7 @@
     echo "<br/>";
     $sql = "select * from searches;";
     $result = mysqli_query($conn, $sql);
-    supergloabl $_SERVER['REMOTE_ADDR']
+    $_SERVER['REMOTE_ADDR']
     ?>
      <form action="finalresults.php" method=POST>
      <h1>Google Search</h1>
