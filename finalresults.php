@@ -11,13 +11,6 @@
             $database = "final";
             $conn = mysqli_connect($server, $username, $password, $database);
 
-            if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
-            }
-            echo "Connected successfully";
-            echo "<br/>";
-              $sql = "select search, ip_address from searches where search='{$search}';";
-              $result = mysqli_query($conn, $sql); 
         ?>
         <?php
         $sql = "INSERT INTO searches (search, ip_address) VALUES ('{$search}', '{$ip_address});";
